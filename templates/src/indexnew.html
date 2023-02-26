@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet"  href="{% static '/dist/output.css'  %}">
+</head>
+<div class="flex flex-col h-screen w-screen bg-slate-200 items-stretch justify-center">
+  <div class="h-screen w-screen flex flex-row p-20 items-center justify-center bg-slate-200">
+  <div class="text-middle items-middle justify-center text-left">
+    <p class="text-slate-400 text-xl"style="font-family: 'Roboto Light'">
+      You're successfully logged in.
+    </p>
+  </div>
+       <a class="text-slate-400 text-xl" style="font-family: 'Roboto Light'" href="{% url 'logout' %}"> Logout Here</a>
+  </div>
+  <footer>
+    <div class="w-screen bg-blue-400 h-5 static-bottom-0">
+    <p class="text-sm text-white text-middle text-center" style="font-family: 'Roboto Light'">Vision Web Development. A Subsidiary of Vision Group Pvt. Ltd.</p>
+    </div>
+  </footer>
+</div>
+</html>
